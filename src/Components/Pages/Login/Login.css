@@ -1,0 +1,81 @@
+/* Container styles */
+.containers {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to bottom,
+    #b7ffff,
+    #1d5c9a
+  ); /* Lớp gradient nhẹ phủ lên */
+  position: relative;
+}
+
+/* Left section styles */
+.left-section {
+  flex: 0 0 60%; /* Chiếm 60% chiều rộng */
+  position: relative;
+  height: 100vh;
+}
+
+/* Hình ảnh bao phủ toàn bộ màn hình bên trái */
+.left-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Đảm bảo ảnh chiếm 100% chiều rộng của .left-section */
+  height: 100vh; /* Đảm bảo ảnh chiếm 100% chiều cao màn hình */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo mà vẫn bao phủ toàn bộ không gian */
+  z-index: 1; /* Đặt ảnh phía dưới lớp gradient */
+  opacity: 0.5;
+}
+
+/* Right section styles */
+.right-section {
+  flex: 0 0 40%; /* Chiếm 40% chiều rộng */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* Đảm bảo form login nằm trên lớp gradient và hình ảnh */
+  opacity: 0.8;
+}
+
+/* SignIn container styles */
+.sign-in-container {
+  /* opacity: 0.8; */
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Button styles */
+.button-primary {
+  width: 100%;
+  text-align: center;
+  background-color: #1d5c9a;
+  color: white;
+}
+
+.button-google {
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-cyan-700 {
+  color: #007b8f;
+}

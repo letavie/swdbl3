@@ -1,0 +1,58 @@
+/* IdentityCardPage.css */
+
+.identity-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: #f8f9fa;
+  }
+  
+  .identity-card-content {
+    padding: 40px; /* Increased padding for better appearance */
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; /* Set a max-width to prevent it from stretching too much */
+  }
+  
+  .identity-card-content h2 {
+    font-size: 2em; /* Increase font size */
+    color: #343a40; /* Darker color */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the text */
+  }
+  
+  .upload-button-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .upload-button {
+    padding: 10px 15px;
+    background: #495057;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .upload-button:hover {
+    background: #6c757d;
+  }
+  
+  .file-input {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,52 @@
+/* Components/Pages/SubjectPages/SubjectPageTemplate.css */
+.subject-page {
+  padding: 20px;
+}
+
+.subject-page h2 {
+  margin-bottom: 20px;
+}
+
+.four-divs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.teacher-card {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  text-align: left; /* Align text to the left */
+  background-color: #f9f9f9;
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a more presentable look */
+  transition: transform 0.2s; /* Add transition for hover effect */
+  max-width: 300px;
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px); /* Add hover effect */
+}
+
+.teacher-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 150px; /* Set the desired width */
+  height: 150px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image fits within the specified dimensions while maintaining aspect ratio */
+}
+
+.teacher-card h5 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.teacher-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}

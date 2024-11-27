@@ -1,0 +1,176 @@
+.user-profile-container {
+  display: flex;
+  height: 100vh; /* Ensure the container takes full height of the viewport */
+  background-color: #f5f5f5; /* Light grey background for entire page */
+  font-family: Arial, sans-serif; /* Modern sans-serif font */
+}
+
+.user-profile-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Takes up remaining space next to sidebar */
+  padding: 20px;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center; /* Center content horizontally */
+  background-color: #ffffff; /* White background for the content area */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted look */
+  border-radius: 8px; /* Rounded corners for the content area */
+  overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+.fixed-row {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 90px; /* Fixed height for the first row */
+  width: 100%; /* Ensure each row takes full width */
+  border: 1px solid #ddd; /* Optional: Add border for visual separation */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Add margin between rows */
+  background-color: #ffffff; /* White background for rows */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted look */
+}
+
+.image-container {
+  width: 100%; /* Ensure image container takes full width */
+  height: 100%; /* Ensure image container takes full height of its parent */
+  overflow: hidden; /* Hide any overflowing content */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.profile-image {
+  width: 100%; /* Stretch the image to fill the width of its container */
+  height: 100%; /* Stretch the image to fill the height of its container */
+  object-fit: cover; /* Cover the container with the image, maintaining aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Space out items evenly */
+  align-items: center; /* Center content vertically */
+  flex: 1; /* Each row takes up equal space */
+  width: 100%; /* Ensure each row takes full width */
+  border: 1px solid #ddd; /* Optional: Add border for visual separation */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Add margin between rows */
+  padding: 20px; /* Add padding inside rows */
+  background-color: #ffffff; /* White background for rows */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted look */
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-image {
+  width: 150px; /* Adjust width of profile image */
+  height: 150px; /* Adjust height of profile image */
+  object-fit: cover; /* Cover the container with the image, maintaining aspect ratio */
+  border-radius: 50%; /* Rounded shape */
+  margin-right: 20px; /* Add margin between profile image and profile details */
+  border: 2px solid #007bff; /* Optional: Add border around the profile image */
+}
+
+.profile-details {
+  flex: 1; /* Take remaining space next to profile image */
+  margin-left: 5px; /* 5px margin to the left of the profile details */
+}
+
+.profile-details h3 {
+  font-size: 20px; /* Adjust font size of profile name */
+  margin-bottom: 5px; /* Bottom margin for spacing */
+  color: #333; /* Darker text color */
+}
+
+.profile-details p {
+  font-size: 14px; /* Adjust font size of email */
+  color: #666; /* Adjust text color */
+  margin: 0; /* Remove default margins */
+}
+
+.edit-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default button border */
+  padding: 10px 20px; /* Button padding */
+  cursor: pointer; /* Cursor style on hover */
+  border-radius: 5px; /* Add border radius */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  margin-top: 20px; /* Add top margin */
+}
+
+.edit-button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+.user-profile-name-row,
+.user-profile-info-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-input-bars {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.user-profile-fullname-input-bar,
+.user-profile-firstname-input-bar,
+.user-profile-country-input-bar,
+.user-profile-gender-input-bar {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.user-profile-fullname-input-bar input,
+.user-profile-firstname-input-bar input,
+.user-profile-country-input-bar input,
+.user-profile-gender-input-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light grey background for inputs */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.user-profile-fullname-input-bar input:focus,
+.user-profile-firstname-input-bar input:focus,
+.user-profile-country-input-bar input:focus,
+.user-profile-gender-input-bar input:focus {
+  border-color: #007bff; /* Blue border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.user-profile-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  margin-top: 20px; /* Adjust the margin as needed */
+  width: 100%;
+}
+
+.email-details {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Add margin above the email details */
+}
+
+.email-details label {
+  margin-left: 10px; /* Add space between the icon and the label */
+}
+
+.email-details p {
+  margin-left: 20px; /* Add space between the label and the paragraph */
+  margin-top: 5px; /* Add space above the paragraph */
+}

@@ -1,0 +1,155 @@
+.tutor-profile-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.send-button {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .edit-button {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .profile-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .send-button:hover {
+    background-color: gold;
+  }
+
+.tutor-profile-content {
+    /* display: flex; */
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+}
+
+.tutor-profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tutor-profile {
+    display: flex;
+    align-items: center;
+}
+
+.tutor-profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.tutor-profile-details h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.tutor-profile-details p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.tutor-profile-input-row {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.tutor-profile-input-bars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tutor-profile-input-bars div {
+    width: 48%;
+}
+
+.tutor-profile-input-bars label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.tutor-profile-input-bars input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tutor-additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-image {
+    margin-bottom: 20px;
+}
+
+.add-image label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.add-image img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-image input[type="file"] {
+    display: block;
+    margin-top: 10px;
+}
+

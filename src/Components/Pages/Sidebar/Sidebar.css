@@ -1,0 +1,51 @@
+.Sidebar {
+  height: 100vh;
+  width: 200px; /* Increase width for better presentation */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f0f2f5; /* Light background color for better contrast */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.Sidebar h3 {
+  text-align: center;
+  margin-bottom: 30px; /* Increase margin for spacing */
+  font-size: 24px; /* Larger font size for the heading */
+  color: #333; /* Darker color for the heading */
+}
+
+.Sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.Sidebar li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px; /* Increase margin for better spacing */
+  font-weight: 700;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.Sidebar li:hover {
+  background-color: #e0e0e0; /* Light grey background on hover */
+  border-radius: 8px; /* Rounded corners on hover */
+}
+
+.Sidebar li a {
+  text-decoration: none;
+  color: #333; /* Darker text color */
+  display: flex;
+  align-items: center;
+  padding: 10px 15px; /* Add padding for clickable area */
+  width: 100%; /* Full width for the link */
+}
+
+.Sidebar img {
+  width: 24px; /* Slightly larger icon */
+  margin-right: 10px;
+}
